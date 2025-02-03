@@ -38,11 +38,6 @@
                   <a href="zhengd35@mail2.sysu.edu.cn">Email</a> &nbsp;/
                   <a href="https://scholar.google.com/citations?user=0dkD_dcAAAAJ&hl=zh-CN">Google Scholar</a> &nbsp;/&nbsp;&nbsp;
                   <a href="https://github.com/zhengdian1">Github</a>
-                  <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/jonbarron/">Github</a> -->
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
@@ -132,29 +127,28 @@
           <td style="padding:20px;width:30%;max-width:30%" align="center">
               <img style="width:100%;max-width:100%" src="images/SpatialDreamer.jpg" alt="dise">
             </td> -->
-          <tr onmouseout="dexgys_stop()" onmouseover="dexgys_start()">
+          <tr onmouseout="spatialdreamer_stop()" onmouseover="spatialdreamer_start()">
           <td style="padding:20px;width:25%;vertical-align:top">
             <div class="one">
               <div class="two" id='dexgys_image'><video  width=100% muted autoplay loop>
-              <source src="images/dexgys.mp4" type="video/mp4">
+              <source src="images/SpatialDreamer.mp4" type="video/mp4">
               Your browser does not support the video tag.
               </video></div>
               <img src='images/SpatialDreamer.jpg' width=100%>
             </div>
             <script type="text/javascript">
-              function dexgys_start() {
-                document.getElementById('dexgys_image').style.opacity = "1";
+              function spatialdreamer_start() {
+                document.getElementById('sp_image').style.opacity = "1";
               }
       
               function dexgys_stop() {
-                document.getElementById('dexgys_image').style.opacity = "0";
+                document.getElementById('sp_image').style.opacity = "0";
               }
-              dexgys_stop()
+              spatialdreamer_stop()
             </script>
           </td>
-          <td width="75%" valign="middle">
-              <p>
-                  <papertitle>SpatialDreamer: Self-supervised Stereo Video Synthesis from Monocular Input </papertitle>
+          <td width="75%" valign="center">
+              <papertitle>SpatialDreamer: Self-supervised Stereo Video Synthesis from Monocular Input </papertitle>
               <br>
                   <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=x38N1hcAAAAJ&view_op=list_works&sortby=pubdate">Zhen Lv</a>,
                   <a href="https://scholar.google.com/citations?user=9YX-jRMAAAAJ&hl=zh-CN&oi=ao">Yangqi Long</a>,
@@ -166,10 +160,7 @@
                 <br>
                 <em>arxiv</em>, 2024
                 <br>
-                </p>
-                <div class="paper" id="lv2024spatialdreamer">
-                    <a href="https://arxiv.org/abs/2411.11934">[arXiv]</a> 
-                </div>
+                <a href="https://arxiv.org/abs/2411.11934">[arXiv]</a> 
                 <br>
             <p> In this paper, we propose SpatialDreamer, a novel self-supervised stereo video generation paradigm that does not require paired stereo video data. The key insight is to apply the forward-backward rendering to data building. </p>
             </td>
