@@ -108,14 +108,14 @@ papertitle {
   font-weight: 700;
 }
 
-.name {
+name {
   padding-top: 20px;
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
 }
 
-.chinese_name{
+chinese_name{
   font-family: "XuandongKaishu";
   color: #888888;
   font-size: 22px;
