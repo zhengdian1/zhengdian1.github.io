@@ -93,13 +93,7 @@ h2 {
   margin: 0;
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
-h3 {
-  font-weight: normal;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 papertitle {
@@ -112,91 +106,36 @@ name {
   padding-top: 20px;
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 26px;
 }
 
 chinese_name{
   font-family: "XuandongKaishu";
   color: #888888;
-  font-size: 22px;
+  font-size: 26px;
 }
 
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
 
 span.highlight {
   background-color: #ffffd0;
-}
-
-.scrollable::-webkit-scrollbar {
-  width: 6px;
-}
-
-.scrollable::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-.scrollable::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-.scrollable::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #25282D;
-  text-align: center;
-  padding: 10px;
-  z-index: 1000;
-}
-
-.fixed-header a {
-  color: #F0EEEE;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.fixed-header a:hover {
-  color: #b0b0b0;
-}
-
-.toggle-button {
-  background: none;
-  border: none;
-  color: #1772d0;
-  text-decoration: underline;
-  cursor: pointer;
-  font-size: 1em;
-  padding: 0;
-  margin: 0;
-}
-
-.toggle-button:hover {
-  color: #f09228;
-}
-
-
-@media screen and (max-width: 768px) {
-  .header_name{
-    width: 100%;
-  }
-  .header_navi {
-    position: absolute;
-    left: -9999px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .fixed-header{
-    display: none;
-  }
-  .paper_image{
-    display: none;
-  }
-  .personal_image{
-    display: none;
-  }
 }
