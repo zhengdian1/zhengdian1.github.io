@@ -171,11 +171,22 @@
 
 <style>
   .scrollable-list {
-    max-height: 200px; /* 控制显示区域的高度 */
+    max-height: 150px; /* 控制显示区域的高度 */
     overflow-y: scroll; /* 垂直滚动条 */
-    border: 1px solid #ccc; /* 可选：添加边框 */
+    /* 移除了 border 和 background-color */
     padding: 10px;
-    background-color: #f9f9f9;
+    /* 可选：隐藏滚动条轨道（仅对 Webkit 浏览器有效） */
+    scrollbar-width: auto; /* Firefox */
+    scrollbar-color: transparent transparent; /* Firefox 滚动条颜色 */
+  }
+
+  .scrollable-list::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollable-list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* 半透明滚动条滑块 */
+    border-radius: 4px;
   }
 
   .scrollable-list li {
@@ -207,6 +218,24 @@
   </li>
   <li>
     <div>[11/2024] Rated as a Top Reviewer of NeurIPS 2024.</div>
+  </li>
+  <li>
+    <div>[11/2024] SpatialDreamer is released, I would call it the most advanced spatial video generation technology in the industry. Stay tuned!</div>
+  </li>
+  <li>
+    <div>[07/2024] 1 paper is accepted by ECCV 2024.</div>
+  </li>
+  <li>
+    <div>[02/2024] 2 papers are accepted by CVPR 2024.</div>
+  </li>
+  <li>
+    <div>[07/2023] 1 paper is accepted by ICCV 2023.</div>
+  </li>
+  <li>
+    <div>[02/2023] 1 paper is accepted by CVPR 2023.</div>
+  </li>
+  <li>
+    <div>[05/2022] 1 paper is accepted by ICASSP 2022.</div>
   </li>
 </ul>
 
@@ -248,7 +277,7 @@
       <p>
         Panorama Generation From NFoV Image Done Right</br>
         <b>Dian Zheng</b>, Cheng Zhang, Xiao-Ming Wu, Cao Li<span class="corresponding">†</span>, Chengfei Lv, Jian-Fang Hu, Wei-Shi Zheng<span class="corresponding">†</span></br>
-        CVPR 2025 <b><span style="color:#FF7777";>🏆️ Highlight (Top 12.1%)</span></b></br>
+        IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025 <b><span style="color:#FF7777";>🏆️ Highlight (Top 12.1%)</span></b></br>
         [<a href="https://arxiv.org/abs/2503.18420" target="_blank">Paper</a>][<a href="https://github.com/iSEE-Laboratory/PanoDecouple" target="_blank">Code</a>][<a href="https://isee-laboratory.github.io/PanoDecouple/" target="_blank">Project Page</a>]
       </p>
     </div>
@@ -262,7 +291,7 @@
     <p>
       Decoupled Distillation to Erase: A General Unlearning Method for Any Class-centric Tasks</br>
       Yu Zhou*, <b>Dian Zheng*</b>, Qijie Mo, Ren-Jie Lu, Kun-Yu Lin<span class="corresponding">†</span></br>, Wei-Shi Zheng<span class="corresponding">†</span></br>
-      CVPR 2025 <b><span style="color:#FF7777";>🏆️ Highlight (Top 12.1%)</span></b></br>
+      IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025 <b><span style="color:#FF7777";>🏆️ Highlight (Top 12.1%)</span></b></br>
       [<a href="https://arxiv.org/abs/2503.23751" target="_blank">Paper</a>]
     </p>
   </div>
@@ -276,7 +305,7 @@
     <p>
       SpatialDreamer: Self-supervised Stereo Video Synthesis from Monocular Input</br>
       Zhen Lv, Yangqi Long, Congzhentao Huang, Cao Li, Chengfei Lv<span class="corresponding">†</span></br>, Hao Ren, <b>Dian Zheng</b></br>
-      CVPR 2025</br>
+      IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025</br>
       [<a href="https://arxiv.org/abs/2411.11934" target="_blank">Paper</a>]
     </p>
   </div>
@@ -290,7 +319,7 @@
     <p>
       Diffusion Model for Volume based Stereo Matching</br>
       <b>Dian Zheng</b>, Xiao-Ming Wu, Zuhao Liu, Jingke Meng, Wei-Shi Zheng<span class="corresponding">†</span></br>
-      IJCV 2025 </br>
+      International Journal of Computer Vision (<b>IJCV</b>), 2025 </br>
       [<a href="https://rdcu.be/d8jDz" target="_blank">Paper</a>][<a href="https://github.com/iSEE-Laboratory/DiffuVolume" target="_blank">Code</a>]
     </p>
   </div>
@@ -304,7 +333,7 @@
     <p>
       Selective Hourglass Mapping for Universal Image Restoration Based on Diffusion Model</br>
       <b>Dian Zheng</b>, Xiao-Ming Wu, Shuzhou Yang, Jian Zhang, Jian-Fang Hu, Wei-Shi Zheng<span class="corresponding">†</span></br>
-      CVPR 2024 </br>
+      IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024 </br>
       [<a href="https://arxiv.org/abs/2403.11157" target="_blank">Paper</a>][<a href="https://github.com/iSEE-Laboratory/DiffUIR" target="_blank">Code</a>]
     </p>
   </div>
@@ -322,7 +351,7 @@
       <p>
         An Economic Framework for 6-DoF Grasp Detection</br>
         Xiao-Ming Wu*, Jia-Feng Cai*, Jian-Jian Jiang, <b>Dian Zheng</b>, Yi-Lin Wei, Wei-Shi Zheng<span class="corresponding">†</span></br>
-        ECCV 2024</br>
+        European Conference on Computer Vision (<b>ECCV</b>), 2024</br>
         [<a href="https://arxiv.org/abs/2407.08366" target="_blank">Paper</a>][<a href="https://github.com/iSEE-Laboratory/EconomicGrasp" target="_blank">Code</a>]
       </p>
     </div>
@@ -336,7 +365,7 @@
     <p>
       Dexterous Grasp Transformer</br>
       Guo-Hao Xu*, Yi-Lin Wei*, <b>Dian Zheng</b>, Xiao-Ming Wu, Wei-Shi Zheng<span class="corresponding">†</span></br>
-      CVPR 2024</br>
+      IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024</br>
       [<a href="https://arxiv.org/abs/2404.18135" target="_blank">Paper</a>][<a href="https://github.com/iSEE-Laboratory/DGTR" target="_blank">Code</a>]
     </p>
   </div>
@@ -350,7 +379,7 @@
     <p>
       Estimator Meets Equilibrium Perspective: A Rectified Straight Through Estimator for Binary Neural Networks Training</br>
       Xiao-Ming Wu, <b>Dian Zheng</b>, Zuhao Liu, Wei-Shi Zheng<span class="corresponding">†</span></br>
-      ICCV 2023</br>
+      IEEE/CVF International Conference on Computer Vision (<b>ICCV</b>), 2023</br>
       [<a href="https://arxiv.org/abs/2308.06689" target="_blank">Paper</a>][<a href="https://github.com/iSEE-Laboratory/ReSTE" target="_blank">Code</a>]
     </p>
   </div>
@@ -364,8 +393,22 @@
     <p>
       Generating Anomalies for Video Anomaly Detection with Prompt-based Feature Mapping</br>
       Zuhao Liu, Xiao-Ming Wu, <b>Dian Zheng</b>, Kun-Yu Lin, Wei-Shi Zheng<span class="corresponding">†</span></br>
-      ICCV 2023</br>
+      IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2023</br>
       [<a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_Generating_Anomalies_for_Video_Anomaly_Detection_With_Prompt-Based_Feature_Mapping_CVPR_2023_paper.pdf" target="_blank">Paper</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/uwst.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      Underwater Stereo Matching Via Unsupervised Appearance And Feature Adaptation Networks</br>
+      Zhong Wei, Yazhi Yuan, Xinchen Ye<span class="corresponding">†</span>, <b>Dian Zheng</b>, Rui Xu</br>
+      International Conference on Acoustics, Speech, and Signal Processing (<b>ICASSP</b>) 2022</br>
+      [<a href="https://ieeexplore.ieee.org/abstract/document/9746701" target="_blank">Paper</a>]
     </p>
   </div>
 </div>
