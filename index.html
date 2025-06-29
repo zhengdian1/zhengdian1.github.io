@@ -171,22 +171,34 @@
 
 <style>
   .scrollable-list {
-    max-height: 150px; /* 控制显示区域的高度 */
+    max-height: 200px; /* 控制显示区域的高度 */
     overflow-y: scroll; /* 垂直滚动条 */
-    /* 移除了 border 和 background-color */
     padding: 10px;
-    /* 可选：隐藏滚动条轨道（仅对 Webkit 浏览器有效） */
-    scrollbar-width: auto; /* Firefox */
-    scrollbar-color: transparent transparent; /* Firefox 滚动条颜色 */
+
+    /* 完全透明背景 */
+    background-color: transparent;
+    border: none; /* 移除边框 */
   }
 
+  /* 自定义滚动条样式（仅支持 Webkit 浏览器，如 Chrome） */
   .scrollable-list::-webkit-scrollbar {
     width: 8px;
   }
 
   .scrollable-list::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2); /* 半透明滚动条滑块 */
+    background-color: #888; /* 滚动条滑块颜色 */
     border-radius: 4px;
+  }
+
+  .scrollable-list::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* 滚动条轨道颜色 */
+    border-radius: 4px;
+  }
+
+  /* Firefox 滚动条样式 */
+  .scrollable-list {
+    scrollbar-width: auto;
+    scrollbar-color: #888 #f1f1f1;
   }
 
   .scrollable-list li {
