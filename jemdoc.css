@@ -420,12 +420,21 @@ table.imgtable, table.imgtable td {
 	margin-left: 0px;
 }
 
-.publication_image img {
+/* .publication_image img {
 	margin-top: 2px;
 	border-radius: 8px;
 	box-shadow: 1px 1px 4px #444;
 	width: 150px;
 	height: auto;
+} */
+
+.publication_image img, .publication_image video {
+	margin-top: 2px;
+	border-radius: 8px;
+	box-shadow: 1px 1px 4px #444;
+	width: 150px; /* 强制视频宽度与图片一致 */
+	height: auto;
+    object-fit: cover; /* 防止视频比例变形 */
 }
 
 .publication_title {
