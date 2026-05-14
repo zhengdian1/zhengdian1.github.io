@@ -1,0 +1,655 @@
+<!-- Copyright: https://pengsida.net/ -->
+
+<!doctype html>
+<html>
+
+<head>
+<title>Dian Zheng</title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="keywords" content="Dian Zheng, Incoming The Chinese University of Hong Kong"> 
+<meta name="description" content="Dian Zheng's homepage">
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/xuandongkaishu/dist/XuandongKaishu/result.css' />
+<link rel="shortcut icon" href="images/yougis.png" type="image/x-icon">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-137722442-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Show more content -->
+<script type="text/javascript">
+    function toggle_vis(id) {
+        // var e = document.getElementById(id);
+        var e = document.getElementsByClassName(id);
+        var showText = document.getElementById("showText");
+        for (var i = 0; i < e.length; i++) {
+            if (e[i].style.display == "none") {
+                e[i].style.display = "inline";
+                showText.innerHTML = "[Show less]";
+            } else {
+                e[i].style.display = "none";
+                showText.innerHTML = "[Show more]";
+            }
+        }
+    }
+</script>
+
+<!-- 鼠标悬停显示图片 -->
+<style>
+    /* 容器样式 */
+    .hover-container {
+      position: relative;
+      display: inline-block;
+    }
+  
+    /* 默认隐藏图片 */
+    .hover-image {
+        display: none;
+        position: absolute;
+        bottom: 100%;  /* 图片显示在悬停元素上方 */
+        left: 125%;
+        transform: translateX(-50%);
+        z-index: 999;
+        width: 200px;  /* 自定义图片宽度 */
+        border: 2px solid #ccc;
+    }
+  
+    /* 悬停时显示图片 */
+    .hover-trigger:hover + .hover-image {
+      display: block;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div id="layout-content" style="margin-top:25px">
+
+<table>
+	<tbody>
+		<tr>
+			<td width="75%">
+				<div id="toptitle">
+					<h1>Dian Zheng <chinese_name>郑典</chinese_name> <h1>
+				</div>
+          <h3 class="title">Building perfect unified model without conflicts</h3>
+				<p>
+          Incoming Ph.D. student, MMLab@CUHK, <a href="https://www.ee.cuhk.edu.hk/~hsli/">Prof. Hongsheng Li</a></br>
+          <div class="hover-container">
+              Email: <a href="mailto:zd1423606603@gmail.com">zd1423606603@gmail.com</a> <b>|</b>
+              <span class="hover-trigger">WeChat: zd1423606603</span>
+              <img src="images/wechat_QRCode.jpg" class="hover-image" alt="提示图片">
+          </div> </br>
+					</br>
+          [<a href="https://scholar.google.com/citations?user=0dkD_dcAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>]
+          [<a href="https://github.com/zhengdian1" target="_blank">Github</a>]
+          [<a href="https://x.com/Mike_Dian_Zheng" target="_blank">Twitter</a>]
+          [<a href="https://www.linkedin.com/in/%E5%85%B8-%E9%83%91-835731359/" target="_blank">LinkedIn</a>]
+        </br>
+        </p>
+
+			</td>
+			<td width="50%">
+				<img src="images/new.jpg" width="100%" style="border-radius: 10%;"/>
+			</td>
+		<tr>
+	</tbody>
+</table>
+
+<h2>Biography</h2> 
+
+<div style="display: flex">
+  <p><chinese_name>I'm passionately obsessed with novelty, but at the same time, ideas are cheap, show me the code.</chinese_name></br></p>
+</div>
+
+<div style="display: flex">
+    <p>
+      I am an incoming PHD student at <a href="https://www.cuhk.edu.hk/chinese/index.html">CUHK</a>, MMLab, advised by <a
+      href="https://www.ee.cuhk.edu.hk/~hsli/">Prof. Hongsheng Li</a>. Before that, I obtain my master degree at <a href="https://www.sysu.edu.cn/sysuen/">SYSU</a> in 2025, advised by <a
+      href="https://www.isee-ai.cn/~zhwshi/">Prof. Wei-Shi Zheng</a> and B.E. degree at <a href="https://www.dlut.edu.cn/en/">DLUT</a> in 2022.
+    </p>
+</div>
+
+<div style="display: flex; margin-bottom: -10px">
+    <p>
+       🛠️ Employment: <br>
+	[2025/07—2026/05] Research Intern, LongCat Team@Meituan, Mentor: <a href="https://manyuan97.github.io/">Manyuan Zhang</a>.  <br>
+        [2024/12—2025/06] Research Intern, Shanghai AI Laboratory, honored to be advised by <a href="https://liuziwei7.github.io/">Prof. Ziwei Liu</a>.  <br>
+        [2024/05—2024/11] Research Intern, Alibaba, Mentor: Cao Li.
+    </p>
+</div>
+
+<!-- <p>
+  <b>I have some research collaborations about unified model, LLM/VLM/Gen Agent, video diffusion/world model, latent reasoning. Feel free to contact me. </b>
+</p> -->
+<p style="margin-top: 20px;">
+  <b>I have some research collaborations about the topic below. Feel free to contact me.</b><br>
+  &bull; Unified Model (interleave gen; solving task conflicts)<br>
+  &bull; LLM / VLM / Gen Agent (skill; RL)<br>
+  &bull; Video Diffusion / World Model (long video gen; action tokenizer)<br>
+  &bull; Latent Reasoning<br>
+</p>
+
+<h2>News</h2>
+
+<style>
+  .scrollable-list {
+    max-height: 200px; /* 控制显示区域的高度 */
+    overflow-y: scroll; /* 垂直滚动条 */
+    padding: 10px;
+
+    /* 完全透明背景 */
+    background-color: transparent;
+    border: none; /* 移除边框 */
+  }
+
+  /* 自定义滚动条样式（仅支持 Webkit 浏览器，如 Chrome） */
+  .scrollable-list::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollable-list::-webkit-scrollbar-thumb {
+    background-color: #888; /* 滚动条滑块颜色 */
+    border-radius: 4px;
+  }
+
+  .scrollable-list::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* 滚动条轨道颜色 */
+    border-radius: 4px;
+  }
+
+  /* Firefox 滚动条样式 */
+  .scrollable-list {
+    scrollbar-width: auto;
+    scrollbar-color: #888 #f1f1f1;
+  }
+
+  .scrollable-list li {
+    margin-bottom: 10px;
+  }
+</style>
+
+<ul class="scrollable-list">
+  <li>
+    <div>[11/2024] Rated as a Gold Reviewer of ICML 2026.</div>
+  </li>
+  <li>
+    <div>[04/2026] Uni-MMMU is accepted by ACL2026 main conference!</div>
+  </li>
+  <li>
+    <div>[03/2026] Release Gen-Searcher, Real-time topical generation!</div>
+  </li>
+  <li>
+    <div style="color: red; font-weight: bold;">[03/2026] Honored to be selected for the Master's Thesis Incentive Program by Chinese Institute of Electronics (CIE), 2025! </div>
+  </li>
+  <li>
+    <div>[03/2026] Release HiAR, minute-level no-drift long video generation without any tricks!</div>
+  </li>
+  <li>
+    <div>[02/2026] Onethinker, OpenSubject are accepted by CVPR2026 main conference and findings respectively!</div>
+  </li>
+  <li>
+    <div>[12/2025] Release EditThinker! Unleasing the multi-turn reasoning ability in any image editor!</div>
+  </li>
+  <li>
+    <div>[12/2025] Release AIA! We find that architecture decoupling can not solve task conflicts in unified model, but simulating the task-specific model behaviour, which achives performance improvement.</div>
+  </li>
+  <li>
+    <div>[09/2025] ShotBench is accepted by NeurIPS2025! Now VLM can become the Cinematic Understanding Expert!</div>
+  </li>
+  <li>
+    <div>[06/2025] Honored to secure Outstanding Master's Thesis in Sun Yat-sen University!</div>
+  </li>
+  <li>
+    <div>[05/2025] Honored to be selected as Outstanding Graduate in Sun Yat-Sen University!</div>
+  </li>
+  <li>
+    <div>[04/2025] PanoDecouple and DELETE are selected as CVPR2025 <span style="font-weight: bold; color: red;">Highlight</span> !</div>
+  </li>
+  <li>
+    <div>[03/2025] VBench-2.0 is released! Test the boundaries of your methods!</div>
+  </li>
+  <li>
+    <div>[02/2025] 3 papers are accepted by CVPR2025 (3/4, 75% success rate).</div>
+  </li>
+  <li>
+    <div>[01/2025] DiffuVolume has finally been accepted by IJCV2025 after a long wait!</div>
+  </li>
+  <li>
+    <div>[12/2024] Awarded Xiaomi Grand Prize Scholarship of Sun Yat-Sen University.</div>
+  </li>
+  <li>
+    <div>[11/2024] Rated as a Top Reviewer of NeurIPS 2024.</div>
+  </li>
+  <li>
+    <div>[11/2024] SpatialDreamer is released, I would call it the most advanced spatial video generation technology in the industry. Stay tuned!</div>
+  </li>
+  <li>
+    <div>[07/2024] 1 paper is accepted by ECCV 2024.</div>
+  </li>
+  <li>
+    <div>[02/2024] 2 papers are accepted by CVPR 2024.</div>
+  </li>
+  <li>
+    <div>[07/2023] 1 paper is accepted by ICCV 2023.</div>
+  </li>
+  <li>
+    <div>[02/2023] 1 paper is accepted by CVPR 2023.</div>
+  </li>
+  <li>
+    <div>[06/2022] Honored to secure Outstanding Bachelor's Thesis in Dalian University of Technology!</div>
+  </li>
+  <li>
+    <div>[06/2022] Honored to be selected as Outstanding Graduate in Dalian University of Technology!</div>
+  </li>
+  <li>
+    <div>[05/2022] 1 paper is accepted by ICASSP 2022.</div>
+  </li>
+
+</ul>
+
+<h2>
+    Publications
+    <span style="font-size: 65%;">(* denotes equal contribution, and <span class="corresponding">†</span> denotes the corresponding author)</span>
+</h2>
+
+<div class="newline_bg">
+    <h3>First, Co-First, Last Author</h3>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/longcat-next.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      LongCat-Next: Lexicalizing Modalities as Discrete Tokens</br>
+      <b>LongCat Team, contributor</b> (Per company policy, interns are acknowledged.)</br>
+      Tech Report, 2026 
+      [<a href="https://arxiv.org/abs/2603.27538" target="_blank">Paper</a>]
+      [<a href="https://github.com/meituan-longcat/LongCat-Next" target="_blank">Code</a>]
+      [<a href="https://longcat.chat/longcat-next/intro" target="_blank">Blog</a>]
+      [<a href="https://longcat.chat/longcat-next" target="_blank">Demo</a>]
+      [<a href="https://mp.weixin.qq.com/s/IzzNLPI9L2tSRvOXniOJ2Q" target="_blank">Social Media [机器之心]</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/aia.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      AIA: Rethinking Architecture Decoupling Strategy In Unified Multimodal Model</br>
+      <b>Dian Zheng</b>, Manyuan Zhang, Hongyu Li, Kai Zou, Hongbo Liu, Ziyu Guo, Kaituo Feng, Yexin Liu, Ying Luo, Hongsheng Li<span class="corresponding">†</span></br>
+      Arxiv, 2025 [<a href="https://arxiv.org/pdf/2511.22663" target="_blank">Paper</a>]
+      [<a href="https://github.com/zhengdian1/AIA" target="_blank">Code</a>]
+      [<a href="https://zhengdian1.github.io/AIA-project/" target="_blank">Project Page</a>]
+      [<a href="https://mp.weixin.qq.com/s/cfkLqkwZdQeo9wH2R3ZNAA" target="_blank">Social Media [机器之心]</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/vbench2.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      VBench-2.0: Advancing Video Generation Benchmark Suite for Intrinsic Faithfulness</br>
+      <b>Dian Zheng*</b>, Ziqi Huang*, Hongbo Liu, Kai Zou, Yinan He, Fan Zhang, Yuanhan Zhang, Jingwen He, Wei-Shi Zheng<span class="corresponding">†</span>, Yu Qiao<span class="corresponding">†</span>, Ziwei Liu<span class="corresponding">†</span></br>
+      Arxiv, 2025 [<a href="https://arxiv.org/abs/2503.21755" target="_blank">Paper</a>]
+      [<a href="https://github.com/Vchitect/VBench/tree/master/VBench-2.0" target="_blank">Code</a>]
+      [<a href="https://vchitect.github.io/VBench-2.0-project/" target="_blank">Project Page</a>]
+      [<a href="https://mp.weixin.qq.com/s/9BPatTiv4e5n_y7lfYCssQ" target="_blank">Social Media [机器之心]</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+    <div class="publication_image">
+        <img src="images/PanoDecouple.jpg">
+    </div>
+    <div class="publication_title">
+      <p>
+        Panorama Generation From NFoV Image Done Right</br>
+        <b>Dian Zheng</b>, Cheng Zhang, Xiao-Ming Wu, Cao Li<span class="corresponding">†</span>, Chengfei Lv, Jian-Fang Hu, Wei-Shi Zheng<span class="corresponding">†</span></br>
+        IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025 <b><span style="color:#FF7777";>🏆️ Highlight</span></b></br>
+        [<a href="https://arxiv.org/abs/2503.18420" target="_blank">Paper</a>][<a href="https://github.com/iSEE-Laboratory/PanoDecouple" target="_blank">Code</a>][<a href="https://isee-laboratory.github.io/PanoDecouple/" target="_blank">Project Page</a>]
+      </p>
+    </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/proedit.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      ProEdit : Inversion-based Editing From Prompts Done Right</br>
+      Zhi Ouyang*, <b>Dian Zheng*</b>, Xiao-Ming Wu, Jian-Jian Jiang, Kun-Yu Lin, Jingke Meng<span class="corresponding">†</span>, Wei-Shi Zheng<span class="corresponding">†</span></br>
+      Arxiv, 2025 [<a href="https://arxiv.org/abs/2512.22118" target="_blank">Paper</a>]
+      [<a href="https://github.com/iSEE-Laboratory/ProEdit" target="_blank">Code</a>]
+      [<a href="https://isee-laboratory.github.io/ProEdit/" target="_blank">Project Page</a>]
+      [<a href="https://mp.weixin.qq.com/s/qKxKXCn_DkqZRkQDqiZ8_g" target="_blank">Social Media [量子位]</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/delete.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      Decoupled Distillation to Erase: A General Unlearning Method for Any Class-centric Tasks</br>
+      Yu Zhou*, <b>Dian Zheng*</b>, Qijie Mo, Ren-Jie Lu, Kun-Yu Lin<span class="corresponding">†</span>, Wei-Shi Zheng<span class="corresponding">†</span></br>
+      IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025 <b><span style="color:#FF7777";>🏆️ Highlight</span></b></br>
+      [<a href="https://arxiv.org/abs/2503.23751" target="_blank">Paper</a>]
+      [<a href="https://github.com/shaaaaron/DELETE" target="_blank">Code</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/diffvolume.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      Diffusion Model for Volume based Stereo Matching</br>
+      <b>Dian Zheng</b>, Xiao-Ming Wu, Zuhao Liu, Jingke Meng, Wei-Shi Zheng<span class="corresponding">†</span></br>
+      International Journal of Computer Vision (<b>IJCV</b>), 2025 [<a href="https://rdcu.be/d8jDz" target="_blank">Paper</a>][<a href="https://github.com/iSEE-Laboratory/DiffuVolume" target="_blank">Code</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/diffuir.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      Selective Hourglass Mapping for Universal Image Restoration Based on Diffusion Model</br>
+      <b>Dian Zheng</b>, Xiao-Ming Wu, Shuzhou Yang, Jian Zhang, Jian-Fang Hu, Wei-Shi Zheng<span class="corresponding">†</span></br>
+      IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024 </br>
+      [<a href="https://arxiv.org/abs/2403.11157" target="_blank">Paper</a>][<a href="https://github.com/iSEE-Laboratory/DiffUIR" target="_blank">Code</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+        <source src="images/SpatialDreamer.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="publication_title">
+    <p>
+      SpatialDreamer: Self-supervised Stereo Video Synthesis from Monocular Input</br>
+      Zhen Lv, Yangqi Long, Congzhentao Huang, Cao Li, Chengfei Lv<span class="corresponding">†</span>, Hao Ren, <b>Dian Zheng</b></br>
+      IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025 
+      [<a href="https://arxiv.org/abs/2411.11934" target="_blank">Paper</a>]
+    </p>
+  </div>
+</div>
+
+<div class="newline_bg">
+    <h3>Others (Selected)</h3>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/gen_searcher.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      Gen-Searcher: Reinforcing Agentic Search for Image Generation</br>
+      Kaituo Feng, Manyuan Zhang, Shuang Chen, Yunlong Lin, Kaixuan Fan, Yilei Jiang, Hongyu Li, <b>Dian Zheng</b>, Chenyang Wang, Xiangyu Yue<span class="corresponding">†</span></br>
+      Arxiv, 2026 [<a href="https://arxiv.org/pdf/2603.28767" target="_blank">Paper</a>]
+      [<a href="https://github.com/tulerfeng/Gen-Searcher" target="_blank">Code</a>] 
+      [<a href="https://gen-searcher.vercel.app/" target="_blank">Project Page</a>] 
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+        <source src="images/hiar.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="publication_title">
+    <p>
+      HiAR: Efficient Autoregressive Long Video Generation via Hierarchical Denoising</br>
+      Kai Zou, <b>Dian Zheng</b>, Hongbo Liu, Tiankai Hang, Bin Liu<span class="corresponding">†</span>, Nenghai Yu</br>
+      Arxiv, 2026 [<a href="https://arxiv.org/abs/2603.08703" target="_blank">Paper</a>]
+      [<a href="https://github.com/Jacky-hate/HiAR" target="_blank">Code</a>] 
+      [<a href="https://jacky-hate.github.io/HiAR/" target="_blank">Project Page</a>]
+      [<a href="https://mp.weixin.qq.com/s/rA283D8ntr1DBiPnzOnVFA" target="_blank">Social Media [量子位]</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/onethinker.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      OneThinker: All-in-one Reasoning Model for Image and Video</br>
+      Kaituo Feng, Manyuan Zhang, Hongyu Li, Kaixuan Fan, Shuang Chen, Yilei Jiang, <b>Dian Zheng</b>, Peiwen Sun, Yiyuan Zhang, Haoze Sun, Yan Feng, Peng Pei, Xunliang Cai, Xiangyu Yue<span class="corresponding">†</span></br>
+      IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2026 [<a href="https://arxiv.org/pdf/2512.03043" target="_blank">Paper</a>]
+      [<a href="https://github.com/tulerfeng/OneThinker" target="_blank">Code</a>] 
+      [<a href="https://mp.weixin.qq.com/s/8_k-Clf9JK9RRpQQbZ6pcQ" target="_blank">Social Media [量子位]</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/editthinker.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      EditThinker: Unlocking Iterative Reasoning for Any Image Editor</br>
+      Hongyu Li, Manyuan Zhang, <b>Dian Zheng</b>, Ziyu Guo, Yimeng Jia, Kaituo Feng, Hao Yu, Yexin Liu, Yan Feng, Peng Pei, Xunliang Cai, Linjiang Huang, Hongsheng Li, Si Liu<span class="corresponding">†</span></br>
+      Arxiv, 2025</br>
+      [<a href="https://arxiv.org/pdf/2512.05965" target="_blank">Paper</a>]
+      [<a href="https://github.com/appletea233/EditThinker" target="_blank">Code</a>]
+      [<a href="https://appletea233.github.io/think-while-edit/" target="_blank">Project Page</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/openobject.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      OpenSubject: Leveraging Video-Derived Identity and Diversity Priors for Subject-driven Image Generation and Manipulation</br>
+      Yexin Liu, Manyuan Zhang, Yueze Wang, Hongyu Li, <b>Dian Zheng</b>, Weiming Zhang, Changsheng Lu, Yan Feng, Peng Pei, Xunliang Cai, Harry Yang<span class="corresponding">†</span></br>
+      IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR findings</b>), 2026 [<a href="https://arxiv.org/pdf/2512.08294" target="_blank">Paper</a>]
+      [<a href="https://github.com/LAW1223/OpenSubject" target="_blank">Code</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/uni-mmmu.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      Uni-MMMU: A Massive Multi-discipline Multimodal Unified Benchmark</br>
+      Kai Zou*, Ziqi Huang*, Yuhao Dong*, Shulin Tian, <b>Dian Zheng</b>, Hongbo Liu, Jingwen He, Bin Liu<span class="corresponding">†</span>, Yu Qiao<span class="corresponding">†</span>, Ziwei Liu<span class="corresponding">†</span></br>
+      ACL Main Conference, 2026</br>
+      [<a href="https://arxiv.org/pdf/2510.13759" target="_blank">Paper</a>][<a href="https://github.com/vchitect/Uni-MMMU" target="_blank">Code</a>][<a href="https://vchitect.github.io/Uni-MMMU-Project/" target="_blank">Project Page</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/echogen.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      EchoGen: Cycle-Consistent Learning for Unified Layout-Image Generation and Understanding</br>
+      Kai Zou, Hongbo Liu, <b>Dian Zheng</b>, Jianxiong Gao, Zhiwei Zhao, Bin Liu<span class="corresponding">†</span></br>
+      Association for the Advancement of Artificial Intelligence (<b>AAAI</b>), 2026</br>
+      [<a href="https://arxiv.org/abs/2603.18001" target="_blank">Paper</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/shotbench.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      ShotBench: Expert-Level Cinematic Understanding in Vision-Language Models</br>
+      Hongbo Liu*, Jingwen He*, Yi Jin, <b>Dian Zheng</b>, Yuhao Dong, Fan Zhang, Ziqi Huang, Yinan He, Yangguang Li, Weichao Chen, Yu Qiao, Wanli Ouyang, Shengjie Zhao<span class="corresponding">†</span>, Ziwei Liu<span class="corresponding">†</span></br>
+      Neural Information Processing Systems (<b>NeurIPS</b>), 2025</br>
+      [<a href="https://arxiv.org/abs/2506.21356" target="_blank">Paper</a>]
+      [<a href="https://github.com/Vchitect/ShotBench/tree/main" target="_blank">Code</a>]
+      [<a href="https://vchitect.github.io/ShotBench-project/" target="_blank">Project Page</a>]
+      [<a href="https://mp.weixin.qq.com/s/WpJtXOgNV6QEYKaPUH4FAQ" target="_blank">Social Media [量子位]</a>]
+    </p>
+  </div>
+</div>
+
+<!-- <div class="publication_container">
+    <div class="publication_image">
+        <img src="images/economic.jpg">
+    </div>
+    <div class="publication_title">
+      <p>
+        An Economic Framework for 6-DoF Grasp Detection</br>
+        Xiao-Ming Wu*, Jia-Feng Cai*, Jian-Jian Jiang, <b>Dian Zheng</b>, Yi-Lin Wei, Wei-Shi Zheng<span class="corresponding">†</span></br>
+        European Conference on Computer Vision (<b>ECCV</b>), 2024</br>
+        [<a href="https://arxiv.org/abs/2407.08366" target="_blank">Paper</a>][<a href="https://github.com/iSEE-Laboratory/EconomicGrasp" target="_blank">Code</a>]
+      </p>
+    </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/dgtr.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      Dexterous Grasp Transformer</br>
+      Guo-Hao Xu*, Yi-Lin Wei*, <b>Dian Zheng</b>, Xiao-Ming Wu, Wei-Shi Zheng<span class="corresponding">†</span></br>
+      IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024</br>
+      [<a href="https://arxiv.org/abs/2404.18135" target="_blank">Paper</a>][<a href="https://github.com/iSEE-Laboratory/DGTR" target="_blank">Code</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/reste.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      Estimator Meets Equilibrium Perspective: A Rectified Straight Through Estimator for Binary Neural Networks Training</br>
+      Xiao-Ming Wu, <b>Dian Zheng</b>, Zuhao Liu, Wei-Shi Zheng<span class="corresponding">†</span></br>
+      IEEE/CVF International Conference on Computer Vision (<b>ICCV</b>), 2023</br>
+      [<a href="https://arxiv.org/abs/2308.06689" target="_blank">Paper</a>][<a href="https://github.com/iSEE-Laboratory/ReSTE" target="_blank">Code</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/pfmf.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      Generating Anomalies for Video Anomaly Detection with Prompt-based Feature Mapping</br>
+      Zuhao Liu, Xiao-Ming Wu, <b>Dian Zheng</b>, Kun-Yu Lin, Wei-Shi Zheng<span class="corresponding">†</span></br>
+      IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2023</br>
+      [<a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_Generating_Anomalies_for_Video_Anomaly_Detection_With_Prompt-Based_Feature_Mapping_CVPR_2023_paper.pdf" target="_blank">Paper</a>]
+    </p>
+  </div>
+</div>
+
+<div class="publication_container">
+  <div class="publication_image">
+      <img src="images/uwst.jpg">
+  </div>
+  <div class="publication_title">
+    <p>
+      Underwater Stereo Matching Via Unsupervised Appearance And Feature Adaptation Networks</br>
+      Zhong Wei, Yazhi Yuan, Xinchen Ye<span class="corresponding">†</span>, <b>Dian Zheng</b>, Rui Xu</br>
+      International Conference on Acoustics, Speech, and Signal Processing (<b>ICASSP</b>) 2022</br>
+      [<a href="https://ieeexplore.ieee.org/abstract/document/9746701" target="_blank">Paper</a>]
+    </p>
+  </div>
+</div> -->
+
+<h2>
+  Academic Service
+</h2>
+
+<div style="display: flex; gap: 40px; font-family: Arial, sans-serif; line-height: 1.6;">
+  <div>
+    <strong>Conference Reviewer:</strong>
+    <div>CVPR: 2025, 2026</div>
+    <div>NeurIPS: 2024 (Top Reviewer), 2025, 2026</div>
+    <div>ICLR: 2025, 2026</div>
+    <div>ICML: 2025, 2026 (Gold Reviewer)</div>
+    <div>ECCV: 2026</div>
+    <div>AAAI: 2026</div>
+    <div>ACM MM: 2025, 2026</div>
+    <div>ICME: 2025, 2026</div>
+  </div>
+  <div>
+    <strong>Journal Reviewer:</strong>
+    <div>TIP</div>
+    <div>TCSVT</div>
+    <div>PR</div>
+    <div>CMV</div>
+  </div>
+</div>
+
+<h2>
+  Awards
+</h2>
+
+<div style="display: flex">
+  <p>
+    <b><span style="color:#FF7777";>CIE Outstanding Master's Thesis Award (中国电子学会硕士论文激励计划), 2025.</b></br>
+    Outstanding Master's Thesis in Sun Yat-sen University (中山大学优秀硕士学位论文), 2025.</br>
+    Outstanding Graduate in Sun Yat-Sen University (中山大学优秀毕业生), 2025.</br>
+    Xiaomi Grand Prize Scholarship of Sun Yat-Sen University (中山大学小米特等奖学金), 2024.</br>
+    NeurIPS2024 Top Reviewer, 2024.</br>
+    First Prize, Academic Scholarship of Sun Yat-Sen University for Graduate Student (中山大学硕士研究生一等奖助金), 2022, 2023, 2024.</br>
+    Outstanding Bachelor's Thesis in Dalian University of Technology (大连理工大学大学优秀本科学位论文), 2022.</br>
+    Outstanding Graduate in Dalian University of Technology (大连理工大学优秀毕业生), 2022.</br>
+  </p>
+</div>
+
+<table style="width:40%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=fff9f9&w=a&t=tt&d=aGL8dsCQ_nrwShk2v8LK3mAYk9zn-fk12xSuKH5ICqw&co=87cefa&cmo=8fbc8f&cmn=ff7f50&ct=4b0082'></script>
+
+</body>
+</html>
+
+
+
+
+
+
