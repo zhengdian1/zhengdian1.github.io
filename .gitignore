@@ -10,3 +10,4 @@ __pycache__/
 index_origin.html
 *.bak
 *copy*.html
+/upload.sh
