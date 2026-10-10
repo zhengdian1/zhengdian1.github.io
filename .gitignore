@@ -8,3 +8,5 @@
 __pycache__/
 *.pyc
 index_origin.html
+*.bak
+*copy*.html
